@@ -1,0 +1,30 @@
+.battleGame {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "score board"
+    "shape board";
+}
+
+@media (max-width: 1000px) {
+  .battleGame {
+    grid-template-rows: 4fr 1fr;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+      "board board"
+      "score shape";
+  }
+}
+
+@media (max-width: 600px) {
+  .battleGame {
+    grid-template-rows: 4fr 1fr 2fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "board"
+      "score"
+      "shape";
+  }
+}
