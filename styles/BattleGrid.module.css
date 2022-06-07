@@ -1,0 +1,7 @@
+.battleGrid {
+  grid-area: board;
+  display: grid;
+  align-self: center;
+  border: solid 8px orange;
+  grid-template-columns: repeat(10, 1fr);
+}
